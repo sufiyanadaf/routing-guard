@@ -1,0 +1,29 @@
+#container{
+    width: 450px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+    margin-left:auto;
+    margin-right: auto;
+    border: 2px solid black;
+    height: 650px;
+    padding-left: 45px;
+    padding-top: 15px;
+
+}
+label{
+    font-size: 18px;
+}
+input{
+    width: 300px;
+}
+ #submit{
+     margin-right: 30px;
+ }
+ #login{
+     margin-left: 30px;
+ }
+ input.ng-touched.ng-invalid{
+     border: 3px solid red;
+ }

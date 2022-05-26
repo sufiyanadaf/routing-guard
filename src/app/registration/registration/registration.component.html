@@ -1,0 +1,44 @@
+<div id="container">
+    <h3>Registration Form</h3>
+    <br>
+    <form [formGroup]="registrationForm">
+        <label>First name:</label><br>
+        <input type="text" formControlName="firstname">
+        <p *ngIf="firstname.touched && firstname.invalid"> Please enter First name</p>
+        <br>
+        <label>Last name:</label><br>
+        <input type="text" formControlName="lastname" >
+        <p *ngIf="lastname.touched && lastname.invalid"> Please enter First name</p>
+        <br>
+        <label>E-mail:</label><br>
+        <input type="email" formControlName="email">
+        <p *ngIf="email.touched && email.invalid"> Please enter First name</p>
+        <br>
+        <label>Phone country code:</label><br>
+        <input type="text" formControlName="phone_country_code">
+        <p *ngIf="phone_country_code.touched && phone_country_code.invalid"> Please enter First name</p>
+        <br>
+        <label>Phone number:</label><br>
+        <input type="text" formControlName="phone_number">
+        <p *ngIf="phone_number.touched && phone_number.invalid"> Please enter First name</p>
+        <br>
+        <label>Password:</label><br>
+        <input type="password" formControlName="password">
+        <p *ngIf="password.touched && password.invalid"> Please enter First name</p>
+        <br>
+        <label>Confirm Password:</label><br>
+        <input type="password" formControlName="confirm_password">
+        <p *ngIf="confirm_password.touched && confirm_password.invalid"> Please enter First name</p>
+        <br>
+        <label>Address:</label><br>
+        <input type="text" formControlName="address">
+        <p *ngIf="address.touched && address.invalid"> Please enter First name</p>
+        <br>
+         <br>
+        <button type="submit" (click)="submitForm()"id="submit" 
+        class="btn btn-success"> Submit </button>
+        <button type="reset" class="btn btn-danger"> Cancel </button>
+        <button id="login" class="btn btn-primary" > Login</button>
+    </form>
+</div>
+

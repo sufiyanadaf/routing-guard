@@ -1,0 +1,27 @@
+#container-2{
+    width: 450px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+    margin-left:auto;
+    margin-right: auto;
+    border: 2px solid black;
+    height: 350px;
+    padding-left: 45px;
+    padding-top: 15px;
+
+}
+label{
+    font-size: 25px;
+}
+input{
+    width:250px;
+    height: 30px;
+    font-size: 20px;
+}
+
+#login{
+    text-decoration: underline;
+    padding-bottom: 15px;
+}

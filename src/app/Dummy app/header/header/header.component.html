@@ -1,0 +1,20 @@
+<div class="row" id="mainNav">
+    <div class="col-2">Home</div>
+    <div class="col-2">About us</div>
+    <div class="col-2">Contact</div>
+    <div class="col-2" id="searchBox">search</div>
+    <div class="col-3">
+        <form>
+            <select (change)="selectChangeHandler($event)" id="select">
+                <option> Select currency symbol :</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+            </select> &nbsp;&nbsp;
+            <button class="btn btn-success" (click)="submit()">CLICK ON</button>
+        </form>
+
+    </div>
+
+</div>

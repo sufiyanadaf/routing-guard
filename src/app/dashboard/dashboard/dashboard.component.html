@@ -1,0 +1,27 @@
+<app-header (recieveMessage)="recieveMessage($event)"></app-header>
+<div class="row">
+    <div class="col-3">
+        <app-left-nav></app-left-nav>
+    </div>
+    <div class="col-5">
+        <div id="box-2">
+            <h4> {{value}}</h4>
+        </div>
+
+        <div id="container">
+            <form [formGroup]="selectForm">
+                <label style="font-size: 25px;">Enter value for selected currency :</label><br>
+                <input type="text" [(ngModel)]="input" formControlName="input">&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-success" (click)="submit()">Submit</button>
+            </form>
+        </div>
+        <br><br>
+        <div id="box-1">
+            <h4>{{result|currency:"INR":"symbol"}}</h4>
+        </div>
+    </div>
+    
+    <div class="col-4">
+        <app-right-nav></app-right-nav>
+    </div>
+</div>

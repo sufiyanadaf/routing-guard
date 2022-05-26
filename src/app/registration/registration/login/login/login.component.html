@@ -1,0 +1,12 @@
+<div id="container-2">
+    <h2 id="login">Login Form</h2>
+    <form [formGroup]="loginForm">
+        <label>E-mail :</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" formControlName="email"placeholder="Enter your E-mail"><br><br>
+        <label>Password :</label> &nbsp;
+        <input type="password" formControlName="password" placeholder="Enter Password"><br><br><br>
+        <button  (click)="login()" id="button" class="btn btn-success">Submit</button>&nbsp;&nbsp;
+        <button type="reset" class="btn btn-danger"> Cancel </button>
+    </form>
+</div>
+
